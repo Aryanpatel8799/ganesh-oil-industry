@@ -1,78 +1,79 @@
+
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">G</span>
+            <div className="flex items-center space-x-4 mb-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-2xl">G</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Ganesh Oil Industry</h3>
-                <p className="text-gray-400">Pure & Natural</p>
+                <h3 className="text-3xl font-bold">Ganesh Oil Industry</h3>
+                <p className="text-emerald-400 font-medium">Pure & Natural</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">
-              For over 35 years, Ganesh Oil Industry has been committed to delivering 
+            <p className="text-slate-300 mb-8 max-w-md leading-relaxed text-lg">
+              For over 38 years, Ganesh Oil Industry has been committed to delivering 
               the highest quality edible oils. Our dedication to purity, quality, and 
               customer satisfaction has made us a trusted name in the industry.
             </p>
             <div className="flex space-x-4">
-              <Button size="sm" variant="outline" className="border-ocean-500 text-ocean-400 hover:bg-ocean-500 hover:text-white">
-                <Facebook className="w-4 h-4" />
+              <Button size="sm" variant="outline" className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 p-3">
+                <Facebook className="w-5 h-5" />
               </Button>
-              <Button size="sm" variant="outline" className="border-ocean-500 text-ocean-400 hover:bg-ocean-500 hover:text-white">
-                <Twitter className="w-4 h-4" />
+              <Button size="sm" variant="outline" className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 p-3">
+                <Twitter className="w-5 h-5" />
               </Button>
-              <Button size="sm" variant="outline" className="border-ocean-500 text-ocean-400 hover:bg-ocean-500 hover:text-white">
-                <Instagram className="w-4 h-4" />
+              <Button size="sm" variant="outline" className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 p-3">
+                <Instagram className="w-5 h-5" />
               </Button>
-              <Button size="sm" variant="outline" className="border-ocean-500 text-ocean-400 hover:bg-ocean-500 hover:text-white">
-                <Linkedin className="w-4 h-4" />
+              <Button size="sm" variant="outline" className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 p-3">
+                <Linkedin className="w-5 h-5" />
               </Button>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><a href="/" className="text-gray-300 hover:text-ocean-400 transition-colors">Home</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-ocean-400 transition-colors">About Us</a></li>
-              <li><a href="/products" className="text-gray-300 hover:text-ocean-400 transition-colors">Products</a></li>
-              <li><a href="/quality" className="text-gray-300 hover:text-ocean-400 transition-colors">Quality</a></li>
-              <li><a href="/gallery" className="text-gray-300 hover:text-ocean-400 transition-colors">Gallery</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-ocean-400 transition-colors">Contact</a></li>
+            <h4 className="text-xl font-bold mb-8 text-white">Quick Links</h4>
+            <ul className="space-y-4">
+              <li><a href="/" className="text-slate-300 hover:text-emerald-400 transition-colors text-lg">Home</a></li>
+              <li><a href="/about" className="text-slate-300 hover:text-emerald-400 transition-colors text-lg">About Us</a></li>
+              <li><a href="/products" className="text-slate-300 hover:text-emerald-400 transition-colors text-lg">Products</a></li>
+              <li><a href="/quality" className="text-slate-300 hover:text-emerald-400 transition-colors text-lg">Quality</a></li>
+              <li><a href="/gallery" className="text-slate-300 hover:text-emerald-400 transition-colors text-lg">Gallery</a></li>
+              <li><a href="/contact" className="text-slate-300 hover:text-emerald-400 transition-colors text-lg">Contact</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-ocean-400 mt-1 flex-shrink-0" />
+            <h4 className="text-xl font-bold mb-8 text-white">Contact Info</h4>
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <MapPin className="w-6 h-6 text-emerald-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">
+                  <p className="text-slate-300 leading-relaxed">
                     123, Industrial Area,<br />
                     Oil Mill Road,<br />
                     Mumbai - 400001, India
                   </p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-ocean-400" />
-                <span className="text-gray-300">+91 98765 43210</span>
+              <div className="flex items-center space-x-4">
+                <Phone className="w-6 h-6 text-emerald-400" />
+                <span className="text-slate-300 text-lg">+91 98765 43210</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-ocean-400" />
-                <span className="text-gray-300">info@ganeshoil.com</span>
+              <div className="flex items-center space-x-4">
+                <Mail className="w-6 h-6 text-emerald-400" />
+                <span className="text-slate-300 text-lg">info@ganeshoil.com</span>
               </div>
             </div>
           </div>
@@ -80,17 +81,17 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 py-6">
+      <div className="border-t border-slate-700">
+        <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-slate-400 text-lg">
               © 2024 Ganesh Oil Industry. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-ocean-400 text-sm transition-colors">
+            <div className="flex space-x-8 mt-4 md:mt-0">
+              <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-ocean-400 text-sm transition-colors">
+              <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
                 Terms of Service
               </a>
             </div>
