@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Award, Shield, Truck } from 'lucide-react';
 
@@ -7,10 +6,10 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-r from-golden-50 to-warm-50">
+        <div className="w-full h-full bg-gradient-to-r from-ocean-50 to-teal-50">
           <div className="absolute inset-0 bg-black/20"></div>
           {/* Placeholder for oil production/factory image */}
-          <div className="w-full h-full bg-gradient-to-br from-golden-200 via-golden-300 to-golden-400 opacity-80"></div>
+          <div className="w-full h-full bg-gradient-to-br from-ocean-200 via-ocean-300 to-teal-400 opacity-80"></div>
         </div>
       </div>
 
@@ -21,7 +20,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left animate-fadeInUp">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
               Pure & Natural
-              <span className="text-golden-600 block">Edible Oils</span>
+              <span className="text-ocean-600 block">Edible Oils</span>
               <span className="text-2xl md:text-3xl lg:text-4xl font-medium text-gray-600 block mt-2">
                 Since 1985
               </span>
@@ -36,7 +35,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button 
                 size="lg" 
-                className="bg-golden-500 hover:bg-golden-600 text-white text-lg px-8 py-4"
+                className="bg-ocean-500 hover:bg-ocean-600 text-white text-lg px-8 py-4"
               >
                 Explore Products
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -44,7 +43,7 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-golden-500 text-golden-600 hover:bg-golden-50 text-lg px-8 py-4"
+                className="border-ocean-500 text-ocean-600 hover:bg-ocean-50 text-lg px-8 py-4"
               >
                 Learn About Us
               </Button>
@@ -53,15 +52,15 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-golden-600">35+</div>
+                <div className="text-3xl font-bold text-ocean-600">35+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-golden-600">500+</div>
+                <div className="text-3xl font-bold text-ocean-600">500+</div>
                 <div className="text-sm text-gray-600">Happy Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-golden-600">99%</div>
+                <div className="text-3xl font-bold text-ocean-600">99%</div>
                 <div className="text-sm text-gray-600">Quality Assured</div>
               </div>
             </div>
@@ -71,7 +70,7 @@ const HeroSection = () => {
           <div className="space-y-6 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-golden-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center">
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">Premium Quality</h3>
@@ -84,7 +83,7 @@ const HeroSection = () => {
 
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-golden-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center">
                   <Shield className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">Hygienic Processing</h3>
@@ -97,7 +96,7 @@ const HeroSection = () => {
 
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-golden-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center">
                   <Truck className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">Pan India Delivery</h3>

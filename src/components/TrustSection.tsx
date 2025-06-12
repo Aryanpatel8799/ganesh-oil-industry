@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Award, Shield, CheckCircle, Globe, Users, Truck } from 'lucide-react';
 
@@ -60,7 +59,7 @@ const TrustSection = () => {
         <div className="text-center mb-16 animate-fadeInUp">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Trust &
-            <span className="text-golden-600"> Quality Assurance</span>
+            <span className="text-ocean-600"> Quality Assurance</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our commitment to excellence is backed by international certifications 
@@ -80,7 +79,7 @@ const TrustSection = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 bg-golden-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-ocean-500 rounded-full flex items-center justify-center mx-auto mb-4">
                       <cert.icon className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-semibold text-gray-800 mb-2">
@@ -105,10 +104,10 @@ const TrustSection = () => {
                   className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fadeInUp"
                   style={{ animationDelay: `${(index + 4) * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 bg-golden-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <achievement.icon className="w-6 h-6 text-golden-600" />
+                  <div className="w-12 h-12 bg-ocean-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <achievement.icon className="w-6 h-6 text-ocean-600" />
                   </div>
-                  <div className="text-3xl font-bold text-golden-600 mb-2">
+                  <div className="text-3xl font-bold text-ocean-600 mb-2">
                     {achievement.number}
                   </div>
                   <div className="text-lg font-semibold text-gray-800 mb-1">
@@ -124,7 +123,7 @@ const TrustSection = () => {
         </div>
 
         {/* Quality Promise */}
-        <div className="mt-16 bg-gradient-to-r from-golden-500 to-golden-600 rounded-2xl p-8 md:p-12 text-center text-white animate-fadeInUp">
+        <div className="mt-16 bg-gradient-to-r from-ocean-500 to-teal-600 rounded-2xl p-8 md:p-12 text-center text-white animate-fadeInUp">
           <h3 className="text-3xl font-bold mb-4">Our Quality Promise</h3>
           <p className="text-xl mb-6 max-w-3xl mx-auto opacity-90">
             "Every drop of oil that leaves our facility is tested for purity, 

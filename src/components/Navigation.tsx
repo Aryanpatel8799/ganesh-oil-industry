@@ -30,7 +30,7 @@ const Navigation = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-golden-600 text-white py-2 hidden md:block">
+      <div className="bg-ocean-600 text-white py-2 hidden md:block">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-6">
@@ -62,7 +62,7 @@ const Navigation = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-golden-500 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-ocean-500 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">G</span>
               </div>
               <div>
@@ -77,14 +77,14 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-gray-700 hover:text-golden-600 transition-colors font-medium ${
-                    location.pathname === item.path ? 'text-golden-600' : ''
+                  className={`text-gray-700 hover:text-ocean-600 transition-colors font-medium ${
+                    location.pathname === item.path ? 'text-ocean-600' : ''
                   }`}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-golden-500 hover:bg-golden-600 text-white">
+              <Button className="bg-ocean-500 hover:bg-ocean-600 text-white">
                 Get Quote
               </Button>
             </div>
@@ -111,13 +111,13 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block py-3 text-gray-700 hover:text-golden-600 transition-colors"
+                  className="block py-3 text-gray-700 hover:text-ocean-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-golden-500 hover:bg-golden-600 text-white">
+              <Button className="w-full mt-4 bg-ocean-500 hover:bg-ocean-600 text-white">
                 Get Quote
               </Button>
             </div>

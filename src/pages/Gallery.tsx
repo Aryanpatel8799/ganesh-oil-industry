@@ -1,11 +1,11 @@
 
 const Gallery = () => {
   return (
-    <div className="pt-32 pb-16 min-h-screen bg-gradient-to-b from-warm-50 to-white">
+    <div className="pt-32 pb-16 min-h-screen bg-gradient-to-b from-ocean-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Our <span className="text-golden-600">Gallery</span>
+            Our <span className="text-ocean-600">Gallery</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Take a visual tour of our facilities, products, and operations.

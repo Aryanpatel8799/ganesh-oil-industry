@@ -32,13 +32,13 @@ const ProductsOverview = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-warm-50">
+    <section className="py-20 bg-gradient-to-b from-white to-ocean-50">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fadeInUp">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Our Premium
-            <span className="text-golden-600"> Products</span>
+            <span className="text-ocean-600"> Products</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover our range of pure, natural edible oils processed with 
@@ -55,13 +55,13 @@ const ProductsOverview = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="p-0">
-                <div className="h-48 bg-gradient-to-br from-golden-100 to-golden-200 rounded-t-lg flex items-center justify-center relative overflow-hidden">
-                  <Droplets className="w-16 h-16 text-golden-500 group-hover:scale-110 transition-transform" />
+                <div className="h-48 bg-gradient-to-br from-ocean-100 to-teal-200 rounded-t-lg flex items-center justify-center relative overflow-hidden">
+                  <Droplets className="w-16 h-16 text-ocean-500 group-hover:scale-110 transition-transform" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
               </CardHeader>
               <CardContent className="p-6">
-                <CardTitle className="text-xl font-bold text-gray-800 mb-3 group-hover:text-golden-600 transition-colors">
+                <CardTitle className="text-xl font-bold text-gray-800 mb-3 group-hover:text-ocean-600 transition-colors">
                   {product.name}
                 </CardTitle>
                 <p className="text-gray-600 mb-4 text-sm">
@@ -70,7 +70,7 @@ const ProductsOverview = () => {
                 <div className="space-y-2 mb-4">
                   {product.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-golden-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-ocean-500 rounded-full mr-3"></div>
                       <span className="text-gray-600">{feature}</span>
                     </div>
                   ))}
@@ -78,7 +78,7 @@ const ProductsOverview = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="w-full border-golden-500 text-golden-600 hover:bg-golden-50 group-hover:bg-golden-500 group-hover:text-white transition-all"
+                  className="w-full border-ocean-500 text-ocean-600 hover:bg-ocean-50 group-hover:bg-ocean-500 group-hover:text-white transition-all"
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -92,7 +92,7 @@ const ProductsOverview = () => {
         <div className="text-center animate-fadeInUp">
           <Button 
             size="lg" 
-            className="bg-golden-500 hover:bg-golden-600 text-white px-8 py-4 text-lg"
+            className="bg-ocean-500 hover:bg-ocean-600 text-white px-8 py-4 text-lg"
           >
             View All Products
             <ArrowRight className="ml-2 w-5 h-5" />
