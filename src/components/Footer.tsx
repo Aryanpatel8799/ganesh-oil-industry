@@ -11,12 +11,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-2xl">G</span>
-              </div>
+              <img 
+                src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
+                alt="Gajanand Oil Industry Logo" 
+                className="w-20 h-20 object-contain"
+              />
               <div>
                 <h3 className="text-3xl font-bold">Gajanand Oil Industry</h3>
-                <p className="text-emerald-400 font-medium">Pure & Natural</p>
+                <p className="text-primary font-medium">Pure & Natural</p>
               </div>
             </div>
             <p className="text-slate-300 mb-8 max-w-md leading-relaxed text-lg">

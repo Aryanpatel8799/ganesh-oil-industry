@@ -26,11 +26,11 @@ const TrustSection = () => {
             Trusted Excellence
           </Badge>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 mb-4 lg:mb-6">
-            Why Choose Ganesh Oil Industry?
+            <span className="gradient-text">Why Choose Gajanand Oil Industry?</span>
           </h2>
           <p className="text-base lg:text-lg text-slate-600 max-w-3xl mx-auto">
-            Three decades of commitment to quality, purity, and customer satisfaction 
-            makes us your trusted partner for premium edible oils.
+            Over 35 years of excellence in producing pure edible oils and premium cotton seed oil cake 
+            for cattle feed, ensuring the highest quality standards in every product.
           </p>
         </div>
 
@@ -94,8 +94,8 @@ const TrustSection = () => {
               ))}
             </div>
             <blockquote className="text-base sm:text-lg lg:text-xl text-slate-700 mb-4 lg:mb-6 italic">
-              "Ganesh Oil Industry has been our trusted supplier for over a decade. 
-              Their consistent quality and natural processing methods make them stand out in the market."
+              "Gajanand Oil Industry has been our trusted supplier for over a decade. 
+              Their cotton seed oil cake is exceptional for our cattle feed, and their edible oils are consistently pure and natural."
             </blockquote>
             <div className="text-sm lg:text-base font-medium text-slate-600">
               - Satisfied Customer, Mumbai

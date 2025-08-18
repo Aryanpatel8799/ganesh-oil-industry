@@ -46,25 +46,25 @@ const ProductsOverview = () => {
 
   const cakeProducts = [
     {
-      name: "Oil Cake & Cattle Feed",
-      description: "Premium quality oil cake and nutritious cattle feed for healthy livestock",
+      name: "Cotton Seed Oil Cake",
+      description: "Premium quality cotton seed oil cake, perfect for cattle feed and livestock nutrition. Rich in protein and essential nutrients for healthy growth.",
       image: "/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png",
-      features: ["High Protein", "Natural Nutrition", "Pure Quality"],
-      category: "Animal Feed"
+      features: ["High Protein Content", "Natural Nutrition", "Cattle Feed Grade"],
+      category: "Premium Cattle Feed"
     },
     {
-      name: "Processed Oil Cake",
-      description: "Specially processed oil cake with enhanced nutritional value",
+      name: "Processed Cotton Seed Cake",
+      description: "Specially processed cotton seed oil cake with enhanced nutritional value for premium livestock feed",
       image: "/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.png",
-      features: ["100% Pure", "Rich in Protein", "Natural Processing"],
-      category: "Premium Feed"
+      features: ["Enhanced Nutrition", "Superior Quality", "Professional Grade"],
+      category: "Premium Processing"
     },
     {
-      name: "Traditional Oil Cake",
-      description: "Traditional oil cake made using time-tested methods",
+      name: "Traditional Cotton Seed Oil Cake",
+      description: "Traditional cotton seed oil cake made using time-tested methods for authentic quality",
       image: "/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png",
-      features: ["Traditional Method", "High Quality", "Trusted Brand"],
-      category: "Traditional"
+      features: ["Traditional Method", "Authentic Quality", "Time-Tested Process"],
+      category: "Traditional Grade"
     }
   ];
 
@@ -91,11 +91,11 @@ const ProductsOverview = () => {
             Our Premium Range
           </Badge>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 mb-4 lg:mb-6">
-            Pure & Natural Oil Products
+            <span className="gradient-text">Our Premium Products</span>
           </h2>
           <p className="text-base lg:text-lg text-slate-600 max-w-3xl mx-auto">
-            Discover our extensive range of premium edible oils, oil cakes, and cattle feed products, 
-            each crafted with care using traditional methods to preserve natural goodness.
+            From pure edible oils to high-quality cotton seed oil cake for cattle feed, 
+            discover our complete range of natural and nutritious products crafted with 35+ years of expertise.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ const ProductsOverview = () => {
         {/* Oil Cake & Cattle Feed Section */}
         <div className="mb-12 lg:mb-16">
           <h3 className="text-xl lg:text-2xl font-bold text-slate-800 mb-6 text-center">
-            Oil Cake & Cattle Feed Products
+            <span className="gold-gradient-text">Cotton Seed Oil Cake & Cattle Feed Products</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {cakeProducts.map((product, index) => (

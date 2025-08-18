@@ -25,16 +25,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 lg:space-x-3">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
               alt="Gajanand Oil Industry Logo" 
-              className="w-10 h-10 lg:w-12 lg:h-12 object-contain"
+              className="w-16 h-16 lg:w-20 lg:h-20 object-contain hover:scale-105 transition-transform duration-300"
             />
-            <div>
-              <h1 className="text-base lg:text-xl font-bold gradient-text">Gajanand Oil</h1>
-              <p className="text-xs lg:text-sm text-muted-foreground hidden sm:block">Industry</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -75,16 +71,12 @@ const Navigation = () => {
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
                 <div className="flex items-center justify-between p-4 border-b border-slate-200">
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center">
                     <img 
                       src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
                       alt="Gajanand Oil Industry Logo" 
-                      className="w-8 h-8 object-contain"
+                      className="w-12 h-12 object-contain"
                     />
-                    <div>
-                      <h1 className="text-lg font-bold gradient-text">Gajanand Oil</h1>
-                      <p className="text-sm text-muted-foreground">Industry</p>
-                    </div>
                   </div>
                 </div>
 
