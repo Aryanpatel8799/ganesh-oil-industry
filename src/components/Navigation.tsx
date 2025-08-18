@@ -23,13 +23,13 @@ const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center group">
             <img 
               src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
               alt="Gajanand Oil Industry Logo" 
-              className="w-16 h-16 lg:w-20 lg:h-20 object-contain hover:scale-105 transition-transform duration-300"
+              className="w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-110 transition-all duration-300 drop-shadow-lg group-hover:drop-shadow-2xl"
             />
           </Link>
 
@@ -70,12 +70,12 @@ const Navigation = () => {
             <SheetContent side="right" className="w-full sm:w-80 p-0">
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
-                <div className="flex items-center justify-between p-4 border-b border-slate-200">
+                <div className="flex items-center justify-center p-6 border-b border-slate-200 bg-gradient-to-r from-primary/5 to-accent/5">
                   <div className="flex items-center">
                     <img 
                       src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
                       alt="Gajanand Oil Industry Logo" 
-                      className="w-12 h-12 object-contain"
+                      className="w-16 h-16 object-contain drop-shadow-lg"
                     />
                   </div>
                 </div>
