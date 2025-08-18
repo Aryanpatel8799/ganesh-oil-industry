@@ -15,12 +15,12 @@ const Footer = () => {
                 <span className="text-white font-bold text-2xl">G</span>
               </div>
               <div>
-                <h3 className="text-3xl font-bold">Ganesh Oil Industry</h3>
+                <h3 className="text-3xl font-bold">Gajanand Oil Industry</h3>
                 <p className="text-emerald-400 font-medium">Pure & Natural</p>
               </div>
             </div>
             <p className="text-slate-300 mb-8 max-w-md leading-relaxed text-lg">
-              For over 38 years, Ganesh Oil Industry has been committed to delivering 
+              For over 35 years, Gajanand Oil Industry has been committed to delivering 
               the highest quality edible oils. Our dedication to purity, quality, and 
               customer satisfaction has made us a trusted name in the industry.
             </p>
@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-lg">
-              © 2024 Ganesh Oil Industry. All rights reserved.
+              © 2024 Gajanand Oil Industry. All rights reserved.
             </p>
             <div className="flex space-x-8 mt-4 md:mt-0">
               <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">

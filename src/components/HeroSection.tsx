@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-blue-50 to-indigo-100"></div>
+      <div className="absolute inset-0 professional-gradient"></div>
       
       {/* Floating elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-emerald-200 rounded-full opacity-20 animate-pulse"></div>
@@ -20,13 +20,13 @@ const HeroSection = () => {
             <div className="text-center lg:text-left space-y-6 lg:space-y-8">
               <div className="space-y-3 lg:space-y-4">
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                  <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+                  <span className="gradient-text">
                     Pure & Natural
                   </span>
                   <br />
-                  <span className="text-slate-800">Edible Oils</span>
+                  <span className="text-foreground">Edible Oils</span>
                 </h1>
-                <p className="text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                   Trusted manufacturer of premium quality edible oils for over 35 years. 
                   ISO certified excellence in every drop.
                 </p>
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm lg:text-base px-6 lg:px-8 py-2.5 lg:py-3"
+                  className="professional-shadow brand-shadow text-sm lg:text-base px-6 lg:px-8 py-2.5 lg:py-3 transition-all duration-300 transform hover:scale-105"
                 >
                   Explore Products
                   <ArrowRight className="ml-2 w-4 h-4 lg:w-5 lg:h-5" />

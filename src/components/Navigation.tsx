@@ -26,12 +26,14 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 lg:space-x-3">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full flex items-center justify-center">
-              <Leaf className="w-4 h-4 lg:w-5 lg:h-5 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
+              alt="Gajanand Oil Industry Logo" 
+              className="w-10 h-10 lg:w-12 lg:h-12 object-contain"
+            />
             <div>
-              <h1 className="text-base lg:text-xl font-bold text-slate-800">Ganesh Oil</h1>
-              <p className="text-xs lg:text-sm text-slate-600 hidden sm:block">Industry</p>
+              <h1 className="text-base lg:text-xl font-bold gradient-text">Gajanand Oil</h1>
+              <p className="text-xs lg:text-sm text-muted-foreground hidden sm:block">Industry</p>
             </div>
           </Link>
 
@@ -43,13 +45,13 @@ const Navigation = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors duration-200 relative ${
                   isActive(item.path)
-                    ? 'text-emerald-600'
-                    : 'text-slate-700 hover:text-emerald-600'
+                    ? 'text-primary'
+                    : 'text-foreground hover:text-primary'
                 }`}
               >
                 {item.name}
                 {isActive(item.path) && (
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full"></div>
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary rounded-full"></div>
                 )}
               </Link>
             ))}
@@ -57,9 +59,7 @@ const Navigation = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
-            <Button 
-              className="bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white border-0 shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <Button className="professional-shadow">
               Get Quote
             </Button>
           </div>
@@ -76,12 +76,14 @@ const Navigation = () => {
                 {/* Mobile Header */}
                 <div className="flex items-center justify-between p-4 border-b border-slate-200">
                   <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full flex items-center justify-center">
-                      <Leaf className="w-4 h-4 text-white" />
-                    </div>
+                    <img 
+                      src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
+                      alt="Gajanand Oil Industry Logo" 
+                      className="w-8 h-8 object-contain"
+                    />
                     <div>
-                      <h1 className="text-lg font-bold text-slate-800">Ganesh Oil</h1>
-                      <p className="text-sm text-slate-600">Industry</p>
+                      <h1 className="text-lg font-bold gradient-text">Gajanand Oil</h1>
+                      <p className="text-sm text-muted-foreground">Industry</p>
                     </div>
                   </div>
                 </div>
@@ -95,8 +97,8 @@ const Navigation = () => {
                       onClick={() => setIsOpen(false)}
                       className={`block px-4 py-3 text-base font-medium transition-colors duration-200 ${
                         isActive(item.path)
-                          ? 'text-emerald-600 bg-emerald-50 border-r-2 border-emerald-500'
-                          : 'text-slate-700 hover:text-emerald-600 hover:bg-slate-50'
+                          ? 'text-primary bg-primary/10 border-r-2 border-primary'
+                          : 'text-foreground hover:text-primary hover:bg-muted'
                       }`}
                     >
                       {item.name}
@@ -107,7 +109,7 @@ const Navigation = () => {
                 {/* Mobile CTA */}
                 <div className="p-4 border-t border-slate-200">
                   <Button 
-                    className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white border-0 shadow-md hover:shadow-lg transition-all duration-300"
+                    className="w-full professional-shadow"
                     onClick={() => setIsOpen(false)}
                   >
                     Get Quote
