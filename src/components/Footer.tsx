@@ -11,20 +11,22 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-8">
-              <img 
-                src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
-                alt="Gajanand Oil Industry Logo" 
-                className="w-20 h-20 object-contain"
-              />
+              <div className="bg-gradient-to-br from-emerald-100 to-yellow-100 p-3 rounded-xl shadow-md border border-emerald-300">
+                <img 
+                  src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
+                  alt="Gajanand Oil Industry Logo" 
+                  className="w-20 h-20 object-contain logo-enhanced-transparent"
+                />
+              </div>
               <div>
-                <h3 className="text-3xl font-bold">Gajanand Oil Industry</h3>
-                <p className="text-primary font-medium">Pure & Natural</p>
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent">Gajanand Oil Industry</h3>
+                <p className="text-yellow-400 font-semibold text-lg">Premium Cotton Seed Cake for Livestock</p>
               </div>
             </div>
             <p className="text-slate-300 mb-8 max-w-md leading-relaxed text-lg">
-              For over 35 years, Gajanand Oil Industry has been committed to delivering 
-              the highest quality edible oils. Our dedication to purity, quality, and 
-              customer satisfaction has made us a trusted name in the industry.
+              For over 27 years, Gajanand Oil Industry has been committed to delivering 
+              the highest quality cotton seed cake for enhanced livestock nutrition. Our dedication to purity, quality, and 
+              customer satisfaction has made us a trusted name in dairy farming.
             </p>
             <div className="flex space-x-4">
               <Button size="sm" variant="outline" className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300 p-3">

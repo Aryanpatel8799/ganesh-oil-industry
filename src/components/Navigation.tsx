@@ -21,33 +21,38 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b-2 border-emerald-100">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        {/* Golden accent line at top */}
+        {/* <div className="h-1 bg-gradient-to-r from-emerald-500 via-yellow-400 to-emerald-500"></div> */}
+        <div className="flex items-center justify-between h-32 lg:h-40">
           {/* Logo */}
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group hover:scale-105 transition-all duration-300">
             <img 
               src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
               alt="Gajanand Oil Industry Logo" 
-              className="w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-110 transition-all duration-300 drop-shadow-lg group-hover:drop-shadow-2xl"
+              className="w-32 h-32 lg:w-40 lg:h-40 object-contain "
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 relative ${
+                className={`text-base font-bold transition-all duration-300 relative group ${
                   isActive(item.path)
-                    ? 'text-primary'
-                    : 'text-foreground hover:text-primary'
+                    ? 'text-emerald-700'
+                    : 'text-slate-800 hover:text-emerald-700'
                 }`}
               >
                 {item.name}
                 {isActive(item.path) && (
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary rounded-full"></div>
+                  <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-yellow-400 rounded-full"></div>
+                )}
+                {!isActive(item.path) && (
+                  <div className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-emerald-500 to-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></div>
                 )}
               </Link>
             ))}
@@ -55,7 +60,7 @@ const Navigation = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
-            <Button className="professional-shadow">
+            <Button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold px-6 py-3 professional-shadow border-2 border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300">
               Get Quote
             </Button>
           </div>
@@ -70,12 +75,12 @@ const Navigation = () => {
             <SheetContent side="right" className="w-full sm:w-80 p-0">
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
-                <div className="flex items-center justify-center p-6 border-b border-slate-200 bg-gradient-to-r from-primary/5 to-accent/5">
+                <div className="flex items-center justify-center p-10 ">
                   <div className="flex items-center">
                     <img 
                       src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
                       alt="Gajanand Oil Industry Logo" 
-                      className="w-16 h-16 object-contain drop-shadow-lg"
+                      className="w-32 h-32 object-contain "
                     />
                   </div>
                 </div>
@@ -87,10 +92,10 @@ const Navigation = () => {
                       key={item.name}
                       to={item.path}
                       onClick={() => setIsOpen(false)}
-                      className={`block px-4 py-3 text-base font-medium transition-colors duration-200 ${
+                      className={`block px-6 py-4 text-base font-bold transition-all duration-200 ${
                         isActive(item.path)
-                          ? 'text-primary bg-primary/10 border-r-2 border-primary'
-                          : 'text-foreground hover:text-primary hover:bg-muted'
+                          ? 'text-emerald-700 bg-gradient-to-r from-emerald-50 to-yellow-50 border-r-4 border-emerald-500'
+                          : 'text-slate-800 hover:text-emerald-700 hover:bg-emerald-50'
                       }`}
                     >
                       {item.name}
@@ -99,9 +104,9 @@ const Navigation = () => {
                 </div>
 
                 {/* Mobile CTA */}
-                <div className="p-4 border-t border-slate-200">
+                <div className="p-6 border-t border-slate-200 bg-gradient-to-r from-emerald-50 to-yellow-50">
                   <Button 
-                    className="w-full professional-shadow"
+                    className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold py-3 professional-shadow border-2 border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300"
                     onClick={() => setIsOpen(false)}
                   >
                     Get Quote
