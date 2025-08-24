@@ -113,7 +113,7 @@ const Quality = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Quality Assurance - ISO Certified Cotton Seed Cake | Ganesh Oil Industries"
+        title="Quality Assurance - ISO Certified Cotton Seed Cake | gajanand Oil Industries"
         description="Discover our uncompromising quality standards for cotton seed cake. ISO certified, FSSAI approved, and laboratory tested for premium livestock nutrition in Gujarat."
         keywords="ISO certified cotton seed cake, FSSAI approved cattle feed, quality assurance, laboratory tested, premium standards, safe animal feed"
         ogImage="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png"

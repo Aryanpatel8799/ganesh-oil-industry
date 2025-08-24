@@ -149,9 +149,9 @@ const Index = () => {
   return (
     <div ref={ref} className="min-h-screen">
       <SEO 
-        title="Ganesh Oil Industries - Premium Cotton Seed Cake Manufacturers in Gujarat"
-        description="Leading manufacturer of high-quality cotton seed cake for cattle feed in Gujarat. Premium nutrition for healthier livestock with our Ganesh Gold, Durga Brand, and Kisan products."
-        keywords="cotton seed cake, cattle feed, livestock nutrition, Gujarat manufacturers, Ganesh Oil Industries, animal feed, cotton seed oil cake"
+        title="gajanand Oil Industries - Premium Cotton Seed Cake Manufacturers in Gujarat"
+        description="Leading manufacturer of high-quality cotton seed cake for cattle feed in Gujarat. Premium nutrition for healthier livestock with our gajanand Gold, Durga Brand, and Kisan products."
+        keywords="cotton seed cake, cattle feed, livestock nutrition, Gujarat manufacturers, gajanand Oil Industries, animal feed, cotton seed oil cake"
         ogImage="/lovable-uploads/1d0cfaae-58fc-4cb1-b8ce-544667a95a3d.png"
       />
       

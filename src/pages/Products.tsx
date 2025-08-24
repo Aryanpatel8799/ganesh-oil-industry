@@ -93,8 +93,8 @@ const Products = () => {
     <>
       <SEO 
         title="Premium Cotton Seed Cake Products - Increase Milk Production by 30% | Gajanand Oil Industry"
-        description="Explore our premium cotton seed cake products: Ganesh Gold, Durga Brand, Kisan Gold, and Yashoda Brand. ISO certified, FSSAI approved. 28-30% protein content for maximum milk yield."
-        keywords="cotton seed cake products, ganesh gold cotton seed cake, durga brand cattle feed, kisan gold organic feed, premium cattle feed, dairy cow nutrition, milk production feed"
+        description="Explore our premium cotton seed cake products: gajanand Gold, Durga Brand, Kisan Gold, and Yashoda Brand. ISO certified, FSSAI approved. 28-30% protein content for maximum milk yield."
+        keywords="cotton seed cake products, gajanand gold cotton seed cake, durga brand cattle feed, kisan gold organic feed, premium cattle feed, dairy cow nutrition, milk production feed"
         canonicalUrl="https://gajanandoilindustry.com/products"
         ogImage="https://gajanandoilindustry.com/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png"
       />
