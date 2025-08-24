@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { ScrollingText } from '@/components/ui/moving-text';
+import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle, Building2, Globe, Star } from 'lucide-react';
 
@@ -72,6 +73,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Contact Us - Get in Touch with Ganesh Oil Industries | Cotton Seed Cake Suppliers"
+        description="Contact Ganesh Oil Industries for premium cotton seed cake in Gujarat. Get expert consultation, bulk orders, and free home delivery. Call +91 9898537506 for quotes."
+        keywords="contact Ganesh Oil Industries, cotton seed cake supplier contact, Gujarat cattle feed, bulk orders, expert consultation, free delivery"
+        ogImage="/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png"
+      />
       {/* Moving Text Banner */}
       <div className="bg-emerald-600 text-white py-3 overflow-hidden">
         <ScrollingText 

@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ScrollingText } from '@/components/ui/moving-text';
+import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, Star, Award, Shield, Leaf, Phone, Package, TrendingUp, CheckCircle } from 'lucide-react';
 
@@ -89,7 +90,15 @@ const Products = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <SEO 
+        title="Premium Cotton Seed Cake Products - Increase Milk Production by 30% | Gajanand Oil Industry"
+        description="Explore our premium cotton seed cake products: Ganesh Gold, Durga Brand, Kisan Gold, and Yashoda Brand. ISO certified, FSSAI approved. 28-30% protein content for maximum milk yield."
+        keywords="cotton seed cake products, ganesh gold cotton seed cake, durga brand cattle feed, kisan gold organic feed, premium cattle feed, dairy cow nutrition, milk production feed"
+        canonicalUrl="https://gajanandoilindustry.com/products"
+        ogImage="https://gajanandoilindustry.com/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png"
+      />
+      <div className="min-h-screen">
       {/* Moving Text Banner */}
       <div className="bg-emerald-600 text-white py-3 overflow-hidden">
         <ScrollingText 
@@ -286,7 +295,8 @@ const Products = () => {
         {/* CTA Section */}
      
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

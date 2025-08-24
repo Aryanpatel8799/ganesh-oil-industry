@@ -2,6 +2,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ScrollingText } from '@/components/ui/moving-text';
 import { AnimatedCounter } from '@/components/ui/animated-counter';
+import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { 
   Users, 
@@ -44,7 +45,15 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <SEO 
+        title="About Gajanand Oil Industry - 27+ Years Leading Cotton Seed Cake Manufacturer"
+        description="Learn about Gajanand Oil Industry's 27+ year journey as Gujarat's leading cotton seed cake manufacturer. ISO certified, serving 500000+ farmers with premium quality cattle feed products."
+        keywords="about gajanand oil industry, cotton seed cake manufacturer, gujarat dairy feed company, ISO certified cattle feed, dairy farming gujarat, livestock feed manufacturer"
+        canonicalUrl="https://gajanandoilindustry.com/about"
+        ogImage="https://gajanandoilindustry.com/lovable-uploads/bd4b6051-e1ee-4b43-b411-7bf70528fc2a.png"
+      />
+      <div className="min-h-screen">
       {/* Moving Text Banner */}
       <div className="bg-emerald-600 text-white py-3 overflow-hidden">
         <ScrollingText 
@@ -262,7 +271,8 @@ const About = () => {
 
         {/* CTA Section */}
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

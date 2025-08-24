@@ -762,3 +762,72 @@ html {
     box-shadow: none !important;
   }
 }
+
+/* Force Light Mode - Override Dark Mode */
+html, body, #root {
+  background-color: white !important;
+  color: rgb(51, 65, 85) !important; /* slate-700 */
+}
+
+/* Override dark mode for all elements */
+* {
+  color-scheme: light !important;
+}
+
+/* Force light backgrounds */
+.bg-slate-900,
+.bg-slate-800,
+.bg-gray-900,
+.bg-gray-800 {
+  background-color: white !important;
+  color: rgb(51, 65, 85) !important;
+}
+
+/* Force light text colors */
+.text-white {
+  color: white !important;
+}
+
+.text-slate-900 {
+  color: rgb(15, 23, 42) !important;
+}
+
+.text-slate-800 {
+  color: rgb(30, 41, 59) !important;
+}
+
+.text-slate-700 {
+  color: rgb(51, 65, 85) !important;
+}
+
+.text-slate-600 {
+  color: rgb(71, 85, 105) !important;
+}
+
+/* Force light card backgrounds */
+.bg-white {
+  background-color: white !important;
+}
+
+/* Override any dark mode media queries */
+@media (prefers-color-scheme: dark) {
+  html, body, #root {
+    background-color: white !important;
+    color: rgb(51, 65, 85) !important;
+  }
+  
+  .auto-dark {
+    background-color: white !important;
+    color: rgb(51, 65, 85) !important;
+  }
+  
+  /* Override dark mode CSS variables */
+  :root {
+    --background: 0 0% 100% !important;
+    --foreground: 217 33% 17% !important;
+    --card: 0 0% 100% !important;
+    --card-foreground: 217 33% 17% !important;
+    --popover: 0 0% 100% !important;
+    --popover-foreground: 217 33% 17% !important;
+  }
+}

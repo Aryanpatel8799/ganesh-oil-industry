@@ -12,3 +12,35 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://gajanandoilindustry.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Specific rules for common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block certain file types if not needed for SEO
+Disallow: /*.json$
+Disallow: /src/
+Disallow: /node_modules/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /products
+Allow: /quality
+Allow: /gallery
+Allow: /contact

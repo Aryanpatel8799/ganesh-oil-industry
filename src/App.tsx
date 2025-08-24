@@ -22,9 +22,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-white text-slate-900" style={{backgroundColor: 'white', color: 'rgb(15, 23, 42)'}}>
           <Navigation />
-          <main className="flex-1">
+          <main className="flex-1 bg-white" style={{backgroundColor: 'white'}}>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />

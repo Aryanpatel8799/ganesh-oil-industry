@@ -1,0 +1,137 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ganeshoilindustries.com/#organization",
+      "name": "Ganesh Oil Industries",
+      "alternateName": "Gajanand Cattle Food",
+      "url": "https://ganeshoilindustries.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ganeshoilindustries.com/lovable-uploads/1d0cfaae-58fc-4cb1-b8ce-544667a95a3d.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9898537506",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi", "Gujarati"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "addressRegion": "Gujarat",
+        "addressLocality": "Surendranagar"
+      },
+      "sameAs": [
+        "https://wa.me/919898537506"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ganeshoilindustries.com/#localbusiness",
+      "name": "Ganesh Oil Industries",
+      "image": "https://ganeshoilindustries.com/lovable-uploads/1d0cfaae-58fc-4cb1-b8ce-544667a95a3d.png",
+      "telephone": "+91-9898537506",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "addressRegion": "Gujarat",
+        "addressLocality": "Surendranagar"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.7281,
+        "longitude": 71.6997
+      },
+      "url": "https://ganeshoilindustries.com",
+      "priceRange": "$$",
+      "openingHours": "Mo-Sa 09:00-18:00"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://ganeshoilindustries.com/#cottonSeedCake",
+      "name": "Cotton Seed Cake",
+      "description": "Premium quality cotton seed cake for cattle feed, rich in protein and essential nutrients",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ganesh Oil Industries"
+      },
+      "manufacturer": {
+        "@id": "https://ganeshoilindustries.com/#organization"
+      },
+      "category": "Animal Feed",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "INR",
+        "seller": {
+          "@id": "https://ganeshoilindustries.com/#organization"
+        }
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ganeshoilindustries.com/#website",
+      "url": "https://ganeshoilindustries.com",
+      "name": "Ganesh Oil Industries - Premium Cotton Seed Cake Manufacturers",
+      "description": "Leading manufacturer of high-quality cotton seed cake for cattle feed in Gujarat",
+      "publisher": {
+        "@id": "https://ganeshoilindustries.com/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://ganeshoilindustries.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ganeshoilindustries.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ganeshoilindustries.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://ganeshoilindustries.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "About",
+          "item": "https://ganeshoilindustries.com/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Quality",
+          "item": "https://ganeshoilindustries.com/quality"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Gallery",
+          "item": "https://ganeshoilindustries.com/gallery"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Contact",
+          "item": "https://ganeshoilindustries.com/contact"
+        }
+      ]
+    }
+  ]
+}

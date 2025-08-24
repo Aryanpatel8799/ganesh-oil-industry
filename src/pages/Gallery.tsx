@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { ScrollingText } from '@/components/ui/moving-text';
+import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { Camera, X } from 'lucide-react';
 
@@ -32,6 +33,12 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Factory Gallery - Modern Manufacturing Facilities | Ganesh Oil Industries"
+        description="Explore our state-of-the-art manufacturing facilities and modern equipment for producing premium cotton seed cake. View our factory images and quality infrastructure."
+        keywords="factory gallery, manufacturing facilities, cotton seed cake production, modern equipment, quality infrastructure, Gujarat factory"
+        ogImage="/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.png"
+      />
       {/* Moving Text Banner */}
       <div className="bg-emerald-600 text-white py-3 overflow-hidden">
         <ScrollingText 
