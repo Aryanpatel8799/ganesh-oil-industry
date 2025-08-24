@@ -139,7 +139,7 @@ const Gallery = () => {
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Take a visual tour through our modern facilities, premium products, quality processes, 
-            and the dedicated team behind Ganesh Oil Industry's success.
+            and the dedicated team behind gajanand Oil Industry's success.
           </p>
         </div>
 

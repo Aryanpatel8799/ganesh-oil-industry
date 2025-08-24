@@ -46,7 +46,7 @@ const About = () => {
     {
       icon: Shield,
       title: "Trust & Safety",
-      description: "FSSAI certified products with rigorous quality testing ensuring safe feed for your livestock",
+      description: "FSSAI certified products with rigorous quality testing ensuring safe feed for your ",
       color: "from-blue-500 to-indigo-600"
     },
     {
@@ -272,7 +272,7 @@ const About = () => {
               35 Years of <span className="bg-gradient-to-r from-emerald-600 to-yellow-600 bg-clip-text text-transparent">Pure Excellence</span>
             </h1>
             <p className="text-base lg:text-xl text-slate-600 mb-8 lg:mb-12 leading-relaxed">
-              Since 1988, Ganesh Oil Industry has been dedicated to providing the finest quality edible oils. 
+              Since 1988, gajanand Oil Industry has been dedicated to providing the finest quality edible oils. 
               Our journey began with a simple mission: to deliver pure, natural, and healthy oil products 
               that enhance the well-being of families across the nation.
             </p>
@@ -314,7 +314,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 lg:space-y-6 text-sm lg:text-base text-slate-600 leading-relaxed">
                 <p>
-                  Founded in 1988 by visionary entrepreneurs, Ganesh Oil Industry started as a small-scale 
+                  Founded in 1988 by visionary entrepreneurs, gajanand Oil Industry started as a small-scale 
                   operation with a big dream: to revolutionize the edible oil industry by focusing on 
                   purity, quality, and traditional processing methods.
                 </p>
@@ -439,7 +439,7 @@ const About = () => {
             Ready to Experience Pure Quality?
           </h2>
           <p className="text-base lg:text-lg text-slate-600 mb-6 lg:mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust Ganesh Oil Industry for their daily cooking needs
+            Join thousands of satisfied customers who trust gajanand Oil Industry for their daily cooking needs
           </p>
           <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
             <Button 

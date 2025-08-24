@@ -45,7 +45,7 @@ const About = () => {
     {
       icon: Shield,
       title: "Trust & Safety",
-      description: "FSSAI certified products with rigorous quality testing ensuring safe feed for your livestock",
+      description: "FSSAI certified products with rigorous quality testing ensuring safe feed for your ",
       color: "from-blue-500 to-indigo-600"
     },
     {

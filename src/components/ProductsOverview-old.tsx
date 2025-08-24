@@ -227,7 +227,7 @@ const ProductsOverview = () => {
               className="bg-white text-emerald-600 hover:bg-slate-50 px-8 py-4 text-lg font-semibold"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Call Now: +91 98765 43210
+              Call Now: +91 98985 37506
             </Button>
             <Button 
               size="lg" 
@@ -313,7 +313,7 @@ const ProductsOverview = () => {
   const cakeProducts = [
     {
       name: "Premium Cotton Seed Cake",
-      description: "Our flagship cotton seed cake with exceptional protein content (22-24%) and balanced amino acid profile. Ideal for dairy cattle, buffaloes, and high-yield livestock. Cold-pressed extraction ensures maximum nutritional retention.",
+      description: "Our flagship cotton seed cake with exceptional protein content (22-24%) and balanced amino acid profile. Ideal for dairy cattle, buffaloes, and high-yield. Cold-pressed extraction ensures maximum nutritional retention.",
       image: "/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png",
       features: ["22-24% Protein", "Rich in Lysine", "High Digestibility", "Aflatoxin Free", "FSSAI Certified"],
       category: "Premium Cattle Feed",
@@ -327,7 +327,7 @@ const ProductsOverview = () => {
     },
     {
       name: "Processed Cotton Seed Cake (Expeller)",
-      description: "Mechanically extracted cotton seed cake using modern expeller technology. Higher protein content (28-30%) with reduced oil residue. Perfect for commercial dairy farms and livestock operations.",
+      description: "Mechanically extracted cotton seed cake using modern expeller technology. Higher protein content (28-30%) with reduced oil residue. Perfect for commercial dairy farms and operations.",
       image: "/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.png",
       features: ["28-30% Protein", "Low Oil Residue", "Enhanced Palatability", "Extended Shelf Life", "Consistent Quality"],
       category: "Commercial Grade",
@@ -355,7 +355,7 @@ const ProductsOverview = () => {
     },
     {
       name: "Cotton Seed Cake Pellets",
-      description: "Compressed cotton seed cake in convenient pellet form for easy handling and storage. Reduced wastage, improved shelf life, and enhanced palatability for livestock.",
+      description: "Compressed cotton seed cake in convenient pellet form for easy handling and storage. Reduced wastage, improved shelf life, and enhanced palatability for.",
       image: "/lovable-uploads/1d0cfaae-58fc-4cb1-b8ce-544667a95a3d.png",
       features: ["Pelletized Form", "Easy Handling", "Reduced Wastage", "Better Storage", "Enhanced Palatability"],
       category: "Convenience Grade",

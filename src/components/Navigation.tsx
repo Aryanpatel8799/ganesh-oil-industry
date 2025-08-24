@@ -9,6 +9,14 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  // WhatsApp function
+  const handleGetQuote = () => {
+    const phoneNumber = "919898537506";
+    const message = "Hi! I'm interested in getting a quote for your cotton seed cake products. Could you please provide me with pricing and availability details?";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
@@ -22,26 +30,24 @@ const Navigation = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b-2 border-emerald-100">
-      <div className="container mx-auto px-4">
-        {/* Golden accent line at top */}
-        {/* <div className="h-1 bg-gradient-to-r from-emerald-500 via-yellow-400 to-emerald-500"></div> */}
-        <div className="flex items-center justify-between h-32 lg:h-40">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="flex items-center justify-between h-20 sm:h-24 lg:h-32 xl:h-40">
           {/* Logo */}
           <Link to="/" className="flex items-center group hover:scale-105 transition-all duration-300">
             <img 
               src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
               alt="Gajanand Oil Industry Logo" 
-              className="w-32 h-32 lg:w-40 lg:h-40 object-contain "
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 object-contain"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-base font-bold transition-all duration-300 relative group ${
+                className={`text-sm xl:text-base font-bold transition-all duration-300 relative group ${
                   isActive(item.path)
                     ? 'text-emerald-700'
                     : 'text-slate-800 hover:text-emerald-700'
@@ -60,7 +66,10 @@ const Navigation = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
-            <Button className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold px-6 py-3 professional-shadow border-2 border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300">
+            <Button 
+              onClick={handleGetQuote}
+              className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base professional-shadow border-2 border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300"
+            >
               Get Quote
             </Button>
           </div>
@@ -68,14 +77,14 @@ const Navigation = () => {
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon" className="relative">
-                <Menu className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="relative h-10 w-10 sm:h-12 sm:w-12">
+                <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full sm:w-80 p-0">
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
-                <div className="flex items-center justify-center p-10 ">
+                <div className="flex items-center justify-center p-6 sm:p-8 lg:p-10">
                   <div className="flex items-center">
                     <img 
                       src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
@@ -106,8 +115,11 @@ const Navigation = () => {
                 {/* Mobile CTA */}
                 <div className="p-6 border-t border-slate-200 bg-gradient-to-r from-emerald-50 to-yellow-50">
                   <Button 
+                    onClick={() => {
+                      handleGetQuote();
+                      setIsOpen(false);
+                    }}
                     className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold py-3 professional-shadow border-2 border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300"
-                    onClick={() => setIsOpen(false)}
                   >
                     Get Quote
                   </Button>

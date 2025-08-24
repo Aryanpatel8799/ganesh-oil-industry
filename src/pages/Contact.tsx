@@ -34,28 +34,28 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone Numbers',
-      details: ['+91 98765 43210', '+91 87654 32109'],
+      details: ['+91 98985 37506', '+91 98249 26552'],
       color: 'text-emerald-600',
       bg: 'bg-emerald-50'
     },
     {
       icon: Mail,
       title: 'Email Addresses', 
-      details: ['info@gajanandcattlefood.com', 'sales@gajanandcattlefood.com'],
+      details: ['gajanandoilindustry@gmail.com'],
       color: 'text-blue-600',
       bg: 'bg-blue-50'
     },
     {
       icon: MapPin,
       title: 'Office Address',
-      details: ['Jamnagar Road, Opp. Khandheri GEB Station', 'Naranka - Dist. Rajkot. (Guj.) INDIA'],
+      details: ['Kamana Road, Saduthala , Visnagar Dist. Mehsana. (Guj.) INDIA'],
       color: 'text-purple-600',
       bg: 'bg-purple-50'
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Monday - Saturday: 9:00 AM - 6:00 PM', 'Sunday: 10:00 AM - 4:00 PM'],
+      details: ['Monday - Sunday: 9:00 AM - 6:00 PM'],
       color: 'text-orange-600',
       bg: 'bg-orange-50'
     }
@@ -81,23 +81,23 @@ const Contact = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         {/* Hero Section */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-6">
-            <MessageCircle className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
+            <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>Get in Touch</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-4 sm:mb-6 px-4">
             Contact Us Today
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-xs sm:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-4">
             Ready to boost your dairy farm's milk production? Get in touch with our experts 
             for the best cotton seed cake prices and personalized consultation.
           </p>
@@ -109,19 +109,19 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16"
         >
           {contactInfo.map((info, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-shadow border-slate-100">
-              <CardHeader>
-                <div className={`w-16 h-16 ${info.bg} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                  <info.icon className={`w-8 h-8 ${info.color}`} />
+              <CardHeader className="p-4 sm:p-6">
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${info.bg} rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4`}>
+                  <info.icon className={`w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 ${info.color}`} />
                 </div>
-                <CardTitle className="text-lg text-slate-900">{info.title}</CardTitle>
+                <CardTitle className="text-base sm:text-lg text-slate-900">{info.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-3 sm:p-4 lg:p-6">
                 {info.details.map((detail, idx) => (
-                  <p key={idx} className="text-sm text-slate-600 mb-1 leading-relaxed">
+                  <p key={idx} className="text-xs sm:text-sm text-slate-600 mb-1 leading-relaxed">
                     {detail}
                   </p>
                 ))}
@@ -131,224 +131,55 @@ const Contact = () => {
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          {/* Contact Form */}
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Card className="border-slate-100">
-              <CardHeader>
-                <CardTitle className="text-2xl text-slate-900">Send us a Message</CardTitle>
-                <p className="text-slate-600">
-                  Fill out the form below and we'll get back to you within 24 hours
-                </p>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">
-                        Full Name *
-                      </label>
-                      <Input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        placeholder="Enter your full name"
-                        required
-                        className="border-slate-200"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">
-                        Phone Number *
-                      </label>
-                      <Input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        placeholder="Enter your phone number"
-                        required
-                        className="border-slate-200"
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">
-                        Email Address
-                      </label>
-                      <Input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        placeholder="Enter your email"
-                        className="border-slate-200"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">
-                        Farm/Company Name
-                      </label>
-                      <Input
-                        type="text"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleInputChange}
-                        placeholder="Enter farm or company name"
-                        className="border-slate-200"
-                      />
-                    </div>
-                  </div>
+      
 
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Subject
-                    </label>
-                    <Input
-                      type="text"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      placeholder="What can we help you with?"
-                      className="border-slate-200"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Message *
-                    </label>
-                    <Textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Tell us about your requirements, quantity needed, etc."
-                      rows={5}
-                      required
-                      className="border-slate-200"
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3"
-                  >
-                    <Send className="w-4 h-4 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          {/* Services & Info */}
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            {/* Services */}
-            <Card className="border-slate-100">
-              <CardHeader>
-                <CardTitle className="text-2xl text-slate-900">Our Services</CardTitle>
-                <p className="text-slate-600">
-                  Comprehensive cattle feed solutions for your dairy farm
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  {services.map((service, index) => (
-                    <div key={index} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
-                      <span className="text-slate-700">{service}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Quick Contact */}
-            <Card className="bg-gradient-to-br from-emerald-600 to-green-700 text-white border-0">
-              <CardHeader>
-                <CardTitle className="text-2xl">Need Immediate Help?</CardTitle>
-                <p className="opacity-90">
-                  Call us directly for instant assistance and quotes
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5" />
-                    <div>
-                      <div className="font-semibold">Sales Hotline</div>
-                      <div className="text-lg">+91 98765 43210</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5" />
-                    <div>
-                      <div className="font-semibold">Available</div>
-                      <div>Mon-Sat: 9 AM - 6 PM</div>
-                    </div>
-                  </div>
-                </div>
-                <Button className="w-full mt-6 bg-white text-emerald-600 hover:bg-slate-50">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Call Now
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Testimonial */}
-            <Card className="border-slate-100">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <blockquote className="text-slate-700 mb-4 italic">
-                  "Excellent service and quality products. Our milk production increased 
-                  significantly after using Gajanand cotton seed cake."
-                </blockquote>
-                <div>
-                  <div className="font-semibold text-slate-900">Ramesh Patel</div>
-                  <div className="text-sm text-slate-600">Dairy Farmer, Rajkot</div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
-
-        {/* Map Section Placeholder */}
+        {/* Interactive Map Section */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-slate-100 rounded-2xl p-8 text-center"
+          className="mb-12 sm:mb-16"
         >
-          <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <MapPin className="w-8 h-8 text-emerald-600" />
+          <div className="text-center mb-6 sm:mb-8">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 mb-2 sm:mb-4">Visit Our Facility</h3>
+            <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+              Located in the heart of Gujarat's agricultural region, our facility is equipped with modern 
+              machinery and quality control systems to ensure the highest standards.
+            </p>
           </div>
-          <h3 className="text-2xl font-bold text-slate-900 mb-2">Visit Our Facility</h3>
-          <p className="text-slate-600 mb-4">
-            Jamnagar Road, Opp. Khandheri GEB Station, Naranka - Dist. Rajkot. (Guj.) INDIA
-          </p>
-          <Button variant="outline" className="border-emerald-600 text-emerald-700">
-            <Globe className="w-4 h-4 mr-2" />
-            View on Map
-          </Button>
+          
+          <Card className="border-slate-100 overflow-hidden">
+            <div className="aspect-video w-full">
+              <iframe
+                src="https://maps.google.com/maps?q=MG5H%2BR97,+Saduthala,+Gujarat+384315,+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Gajanand Oil Industry Location"
+                className="rounded-lg"
+              ></iframe>
+            </div>
+            <div className="p-4 sm:p-6 bg-gradient-to-r from-emerald-50 to-green-50">
+              <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div className="text-center sm:text-left">
+                  <h4 className="font-semibold text-slate-900 text-sm sm:text-base">Gajanand Oil Industry</h4>
+                  <p className="text-xs sm:text-sm text-slate-600">MG5H+R97, Saduthala, Gujarat 384315, India</p>
+                </div>
+                <Button 
+                  variant="outline" 
+                  className="border-emerald-600 text-emerald-700 hover:bg-emerald-50 text-sm sm:text-base px-4 py-2"
+                  onClick={() => window.open('https://maps.app.goo.gl/bKfahemJ7TzsvXD98', '_blank')}
+                >
+                  <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+                  Get Directions
+                </Button>
+              </div>
+            </div>
+          </Card>
         </motion.div>
       </div>
     </div>

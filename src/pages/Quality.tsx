@@ -120,7 +120,7 @@ const Quality = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         {/* Hero Section */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -335,29 +335,7 @@ const Quality = () => {
         </motion.div>
 
         {/* CTA Section */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center bg-gradient-to-r from-emerald-600 to-green-700 rounded-2xl p-12 text-white"
-        >
-          <h2 className="text-3xl font-bold mb-4">
-            Experience Quality You Can Trust
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Request quality certificates and test reports for our cotton seed cake products
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-emerald-600 hover:bg-slate-50 px-8 py-3">
-              Download Certificates
-            </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-3">
-              Quality Guarantee
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </motion.div>
+    
       </div>
     </div>
   );

@@ -6,6 +6,14 @@ import { ArrowRight, Droplets, Star, Award, TrendingUp,CheckCircle, Users, Truck
 import { motion } from 'framer-motion';
 
 const ProductsOverview = () => {
+  // WhatsApp function
+  const handleGetQuote = (productName: string) => {
+    const phoneNumber = "919898537506";
+    const message = `Hi! I'm interested in getting a quote for ${productName}. Could you please provide me with pricing and availability details?`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   // Scroll animation hooks
   const { ref: heroRef, controls: heroControls } = useScrollAnimation(0.2);
   const { ref: statsRef, controls: statsControls } = useScrollAnimation(0.3);
@@ -61,7 +69,7 @@ const ProductsOverview = () => {
   // Featured products - simplified and professional
   const featuredProducts = [
     {
-      name: "High Protein Cotton Seed Cake",
+      name: "Ganesh Gold Cotton Seed Cake",
       description: "Premium quality with 28-30% protein content for maximum milk yield",
       image: "/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png",
       features: ["28-30% Protein", "Increases Milk Yield by 25%", "FSSAI Certified"],
@@ -69,15 +77,15 @@ const ProductsOverview = () => {
       category: "Premium Grade"
     },
     {
-      name: "Expeller Cotton Seed Cake",
+      name: "Durga Brand Cotton Seed Cake",
       description: "Mechanically extracted cake perfect for commercial dairy farms",
-      image: "/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.png", 
+      image: "/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.jpg", 
       features: ["24-26% Protein", "High Digestibility", "Bulk Supply Available"],
       price: "Wholesale Rate",
       category: "Commercial Grade"
     },
     {
-      name: "Organic Cotton Seed Cake",
+      name: "Kisan Cotton Seed Cake",
       description: "100% organic cake from pesticide-free cotton cultivation",
       image: "/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png",
       features: ["100% Organic", "Chemical Free", "Premium Quality"],
@@ -88,7 +96,7 @@ const ProductsOverview = () => {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-slate-50">
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 relative z-10">
         
         {/* Professional Header */}
         <motion.div 
@@ -147,7 +155,7 @@ const ProductsOverview = () => {
         viewport={{ once: true }}
         className="py-20 bg-white"
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -293,7 +301,10 @@ const ProductsOverview = () => {
                     ))}
                   </div>
                   
-                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
+                  <Button 
+                    onClick={() => handleGetQuote(product.name)}
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                  >
                     Get Quote
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>

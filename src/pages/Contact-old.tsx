@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Addresses',
-      details: ['info@ganeshoil.com', 'sales@ganeshoil.com'],
+      details: ['info@gajanandoil.com', 'sales@gajanandoil.com'],
       color: 'text-blue-600',
       bg: 'bg-blue-50'
     },
@@ -62,10 +62,10 @@ const Contact = () => {
   ];
 
   const departments = [
-    { name: 'Sales Inquiry', email: 'sales@ganeshoil.com', phone: '+91 98765 43210' },
-    { name: 'Technical Support', email: 'support@ganeshoil.com', phone: '+91 87654 32109' },
-    { name: 'Export Division', email: 'export@ganeshoil.com', phone: '+91 76543 21098' },
-    { name: 'Quality Assurance', email: 'quality@ganeshoil.com', phone: '+91 65432 10987' }
+    { name: 'Sales Inquiry', email: 'sales@gajanandoil.com', phone: '+91 98765 43210' },
+    { name: 'Technical Support', email: 'support@gajanandoil.com', phone: '+91 87654 32109' },
+    { name: 'Export Division', email: 'export@gajanandoil.com', phone: '+91 76543 21098' },
+    { name: 'Quality Assurance', email: 'quality@gajanandoil.com', phone: '+91 65432 10987' }
   ];
 
   return (

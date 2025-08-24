@@ -34,14 +34,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone Numbers',
-      details: ['+91 98765 43210', '+91 87654 32109'],
+      details: ['+91 98985 37506', '+91 98985 37506'],
       color: 'text-emerald-600',
       bg: 'bg-emerald-50'
     },
     {
       icon: Mail,
       title: 'Email Addresses', 
-      details: ['info@gajanandcattlefood.com', 'sales@gajanandcattlefood.com'],
+      details: ['gajanandoilindustry@gmail.com'],
       color: 'text-blue-600',
       bg: 'bg-blue-50'
     },
@@ -291,7 +291,7 @@ const Contact = () => {
                     <Phone className="w-5 h-5" />
                     <div>
                       <div className="font-semibold">Sales Hotline</div>
-                      <div className="text-lg">+91 98765 43210</div>
+                      <div className="text-lg">+91 98985 37506</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">

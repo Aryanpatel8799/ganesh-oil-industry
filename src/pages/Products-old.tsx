@@ -63,7 +63,7 @@ const Products = () => {
     },
     {
       name: 'Premium Cotton Seed Cake',
-      description: 'High-quality cotton seed cake with 22-24% protein content, perfect for livestock nutrition. Rich in essential amino acids and minerals for healthy cattle growth and increased milk production.',
+      description: 'High-quality cotton seed cake with 22-24% protein content, perfect for  nutrition. Rich in essential amino acids and minerals for healthy cattle growth and increased milk production.',
       image: '/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png',
       price: '₹25/Kg',
       features: ['22-24% Protein', 'Rich in Lysine', 'High Digestibility', 'Aflatoxin Free', 'FSSAI Certified'],
