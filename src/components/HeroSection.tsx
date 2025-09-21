@@ -55,7 +55,7 @@ const HeroSection = () => {
                   </div>
                   
                   <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-tight">
-                    <span className="text-emerald-600">Gajanand</span> Oil Industry
+                    <span className="text-emerald-600">Gajanand</span> Oil Industries
                     <br />
                     <div className="text-2xl sm:text-3xl lg:text-4xl text-slate-700 mt-2">
                       <MovingText 

@@ -166,14 +166,14 @@ const Contact = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Gajanand Oil Industry Location"
+                title="Gajanand Oil Industries Location"
                 className="rounded-lg"
               ></iframe>
             </div>
             <div className="p-4 sm:p-6 bg-gradient-to-r from-emerald-50 to-green-50">
               <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                 <div className="text-center sm:text-left">
-                  <h4 className="font-semibold text-slate-900 text-sm sm:text-base">Gajanand Oil Industry</h4>
+                  <h4 className="font-semibold text-slate-900 text-sm sm:text-base">Gajanand Oil Industries</h4>
                   <p className="text-xs sm:text-sm text-slate-600">MG5H+R97, Saduthala, Gujarat 384315, India</p>
                 </div>
                 <Button 

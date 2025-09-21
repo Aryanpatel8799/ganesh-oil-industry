@@ -36,7 +36,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center group hover:scale-105 transition-all duration-300">
             <img 
               src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
-              alt="Gajanand Oil Industry Logo" 
+              alt="Gajanand Oil Industries Logo" 
               className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 object-contain"
             />
           </Link>
@@ -88,7 +88,7 @@ const Navigation = () => {
                   <div className="flex items-center">
                     <img 
                       src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
-                      alt="Gajanand Oil Industry Logo" 
+                      alt="Gajanand Oil Industries Logo" 
                       className="w-32 h-32 object-contain "
                     />
                   </div>

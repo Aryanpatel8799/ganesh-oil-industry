@@ -34,7 +34,7 @@ const Index = () => {
       name: "Ramesh Patel",
       location: "Tharad, Gujarat",
       rating: 5,
-      comment: "Our milk production increased by 28% within a month of using Gajanand Oil Industry cotton seed cake. Excellent quality!"
+      comment: "Our milk production increased by 28% within a month of using Gajanand Oil Industries cotton seed cake. Excellent quality!"
     },
     {
       name: "Suresh Kumar",
@@ -46,7 +46,7 @@ const Index = () => {
       name: "Mahesh Shah",
       location: "Dhanera, Gujarat",
       rating: 5,
-      comment: "Gajanand Oil Industry provides consistent quality and timely delivery. Highly recommended for dairy farmers."
+      comment: "Gajanand Oil Industries provides consistent quality and timely delivery. Highly recommended for dairy farmers."
     },
     {
       name: "Kiran Joshi",
@@ -76,7 +76,7 @@ const Index = () => {
       name: "Harsh Patel",
       location: "Pali, Rajesthan",
       rating: 5,
-      comment: "Outstanding quality and timely delivery. Gajanand Oil Industry is our trusted partner for cattle feed."
+      comment: "Outstanding quality and timely delivery. Gajanand Oil Industries is our trusted partner for cattle feed."
     },
     {
       name: "Gopal Mehta",
@@ -188,7 +188,7 @@ const Index = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-6"
             >
               <Factory className="w-4 h-4" />
-              <span>Why Choose Gajanand Oil Industry</span>
+              <span>Why Choose Gajanand Oil Industries</span>
             </motion.div>
             
             <motion.h2 
@@ -266,7 +266,7 @@ const Index = () => {
               viewport={{ once: true }}
               className="text-xl text-slate-600 max-w-2xl mx-auto"
             >
-              Real experiences from Customers who trust Gajanand Oil Industry for their cattle feed needs
+              Real experiences from Customers who trust Gajanand Oil Industries for their cattle feed needs
             </motion.p>
           </div>
           

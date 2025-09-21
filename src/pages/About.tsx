@@ -47,9 +47,9 @@ const About = () => {
   return (
     <>
       <SEO 
-        title="About Gajanand Oil Industry - 27+ Years Leading Cotton Seed Cake Manufacturer"
-        description="Learn about Gajanand Oil Industry's 27+ year journey as Gujarat's leading cotton seed cake manufacturer. ISO certified, serving 500000+ farmers with premium quality cattle feed products."
-        keywords="about gajanand oil industry, cotton seed cake manufacturer, gujarat dairy feed company, ISO certified cattle feed, dairy farming gujarat, livestock feed manufacturer"
+        title="About Gajanand Oil Industries - 27+ Years Leading Cotton Seed Cake Manufacturer"
+        description="Learn about Gajanand Oil Industries's 27+ year journey as Gujarat's leading cotton seed cake manufacturer. ISO certified, serving 500000+ farmers with premium quality cattle feed products."
+        keywords="about Gajanand Oil Industries, cotton seed cake manufacturer, gujarat dairy feed company, ISO certified cattle feed, dairy farming gujarat, livestock feed manufacturer"
         canonicalUrl="https://gajanandoilindustry.com/about"
         ogImage="https://gajanandoilindustry.com/lovable-uploads/bd4b6051-e1ee-4b43-b411-7bf70528fc2a.png"
       />
@@ -57,7 +57,7 @@ const About = () => {
       {/* Moving Text Banner */}
       <div className="bg-emerald-600 text-white py-3 overflow-hidden">
         <ScrollingText 
-          text="★ About Gajanand Oil Industry ★ 27+ Years Experience ★ Leading Cotton Seed Cake Manufacturer ★ Trusted by Farmers Nationwide ★ ISO Certified Quality"
+          text="★ About Gajanand Oil Industries ★ 27+ Years Experience ★ Leading Cotton Seed Cake Manufacturer ★ Trusted by Farmers Nationwide ★ ISO Certified Quality"
           speed={25}
           className="text-sm font-medium"
         />
@@ -81,7 +81,7 @@ const About = () => {
             Leading Cotton Seed Cake Manufacturer
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-xs sm:max-w-2xl lg:max-w-3xl mx-auto mb-8 sm:mb-12 px-4 leading-relaxed">
-            For over 27 years, Gajanand Oil Industry has been Gujarat's trusted partner in dairy farming, 
+            For over 27 years, Gajanand Oil Industries has been Gujarat's trusted partner in dairy farming, 
             providing premium cotton seed cake that increases milk production by 25-30% naturally.
           </p>
 
@@ -118,8 +118,8 @@ const About = () => {
           viewport={{ once: true }}
           className="mb-12 sm:mb-16 lg:mb-20"
         >
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center px-4">
-            <div className="order-2 lg:order-1">
+          <div className="max-w-4xl mx-auto px-4">
+            <div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 sm:mb-6">Our Story</h2>
               <p className="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed mb-4 sm:mb-6">
                 Founded in 1998, we started with a simple mission: provide the highest quality 
@@ -138,39 +138,6 @@ const About = () => {
                 <Phone className="mr-2 w-3 h-3 sm:w-4 sm:h-4" />
                 Contact Us Today
               </Button>
-            </div>
-            
-            <div className="relative order-1 lg:order-2">
-              <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:gap-4">
-                <img 
-                  src="/lovable-uploads/bd4b6051-e1ee-4b43-b411-7bf70528fc2a.png"
-                  alt="Manufacturing Facility"
-                  className="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-lg sm:rounded-xl shadow-lg"
-                />
-                <img 
-                  src="/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.jpg"
-                  alt="Happy Cattle"
-                  className="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-lg sm:rounded-xl shadow-lg mt-4 sm:mt-6 lg:mt-8"
-                />
-                <img 
-                  src="/lovable-uploads/356c9ecc-0c23-48f6-9d87-7d217a51cd70.png"
-                  alt="Quality Products"
-                  className="w-full h-24 sm:h-28 lg:h-32 object-cover rounded-lg sm:rounded-xl shadow-lg"
-                />
-                <img 
-                  src="/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png"
-                  alt="Cotton Seed Cake"
-                  className="w-full h-24 sm:h-28 lg:h-32 object-cover rounded-lg sm:rounded-xl shadow-lg"
-                />
-              </div>
-              
-              {/* Quality Badges */}
-              <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 lg:-top-4 lg:-right-4 bg-emerald-600 text-white px-2 py-1 sm:px-3 sm:py-2 lg:px-4 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
-                ISO Certified
-              </div>
-              <div className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 lg:-bottom-4 lg:-left-4 bg-yellow-500 text-white px-2 py-1 sm:px-3 sm:py-2 lg:px-4 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
-                FSSAI Approved
-              </div>
             </div>
           </div>
         </motion.div>

@@ -31,20 +31,20 @@ const Footer = () => {
               <div className="bg-gradient-to-br from-emerald-100 to-yellow-100 p-3 rounded-xl shadow-lg border border-emerald-300/50 hover:scale-105 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/66af7340-4154-4493-a512-910acdf22d64.png" 
-                  alt="Gajanand Oil Industry Logo" 
+                  alt="Gajanand Oil Industries Logo" 
                   className="w-16 h-16 lg:w-20 lg:h-20 object-contain"
                 />
               </div>
               <div className="text-center lg:text-left">
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-emerald-200 to-yellow-200 bg-clip-text text-transparent mb-1">
-                  Gajanand Oil Industry
+                  Gajanand Oil Industries
                 </h3>
                 <p className="text-yellow-400 font-semibold text-sm lg:text-base">Premium Cotton Seed Cake</p>
               </div>
             </div>
             
             <p className="text-slate-300 leading-relaxed text-sm lg:text-base max-w-lg mx-auto lg:mx-0 mb-6">
-              For over 27 years, Gajanand Oil Industry has been committed to delivering 
+              For over 27 years, Gajanand Oil Industries has been committed to delivering 
               the highest quality cotton seed cake for enhanced cattle nutrition. Our dedication to purity, quality, and 
               customer satisfaction has made us a trusted name in dairy farming across Gujarat.
             </p>
@@ -187,7 +187,7 @@ const Footer = () => {
           <div className="flex flex-col space-y-4 lg:flex-row lg:justify-between lg:items-center lg:space-y-0">
             <div className="flex flex-col items-center space-y-3 lg:flex-row lg:space-y-0 lg:space-x-4 text-center lg:text-left order-2 lg:order-1">
               <p className="text-slate-400 text-sm">
-                © {currentYear} Gajanand Oil Industry. All rights reserved.
+                © {currentYear} Gajanand Oil Industries. All rights reserved.
               </p>
               <div className="flex items-center text-slate-400 text-sm">
                 <span className="mr-1">Made with</span>

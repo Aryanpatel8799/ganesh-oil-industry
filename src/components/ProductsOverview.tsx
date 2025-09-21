@@ -84,14 +84,14 @@ const ProductsOverview = () => {
       price: "Wholesale Rate",
       category: "Commercial Grade"
     },
-    {
-      name: "Kisan Cotton Seed Cake",
-      description: "100% organic cake from pesticide-free cotton cultivation",
-      image: "/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png",
-      features: ["100% Organic", "Chemical Free", "Premium Quality"],
-      price: "Premium Rate", 
-      category: "Organic Grade"
-    }
+    // {
+    //   name: "Kisan Cotton Seed Cake",
+    //   description: "100% organic cake from pesticide-free cotton cultivation",
+    //   image: "/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png",
+    //   features: ["100% Organic", "Chemical Free", "Premium Quality"],
+    //   price: "Premium Rate", 
+    //   category: "Organic Grade"
+    // }
   ];
 
   return (
@@ -241,7 +241,7 @@ const ProductsOverview = () => {
                 variants={slideInFromBottom}
                 className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 text-center hover:shadow-xl transition-shadow"
               >
-                <div className="text-5xl mb-4">{benefit.icon}</div>
+                {/* <div className="text-5xl mb-4">{benefit.icon}</div> */}
                 <h3 className="text-lg font-bold text-slate-900 mb-3">{benefit.title}</h3>
                 <p className="text-slate-600 leading-relaxed text-sm">{benefit.description}</p>
               </motion.div>
@@ -249,70 +249,7 @@ const ProductsOverview = () => {
           </div>
         </motion.div>
 
-        {/* Featured Products - Clean Layout */}
-        <motion.div 
-          ref={productsRef}
-          initial="hidden"
-          animate={productsControls}
-          variants={fadeInUp}
-          className="mb-16"
-        >
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Products</h2>
-            <p className="text-lg text-slate-600">
-              High-quality cotton seed cake products for all your cattle feed requirements
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {featuredProducts.map((product, index) => (
-              <motion.div
-                key={index}
-                variants={slideInFromBottom}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-xl transition-all duration-300"
-              >
-                <div className="aspect-square bg-gradient-to-br from-emerald-50 to-green-100 p-6">
-                  <img 
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <Badge variant="secondary" className="bg-emerald-100 text-emerald-700">
-                      {product.category}
-                    </Badge>
-                    <div className="text-right">
-                      <div className="text-lg font-bold text-emerald-600">{product.price}</div>
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">{product.name}</h3>
-                  <p className="text-slate-600 mb-4">{product.description}</p>
-                  
-                  <div className="space-y-2 mb-6">
-                    {product.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <Star className="w-4 h-4 text-yellow-500 fill-current" />
-                        <span className="text-sm text-slate-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <Button 
-                    onClick={() => handleGetQuote(product.name)}
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
-                  >
-                    Get Quote
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>       
+    
       </div>
     </section>
   );

@@ -17,9 +17,9 @@ const Products = () => {
 
   const productCategories = [
     {
-      name: 'Ganesh Gold Cotton Seed Cake',
+      name: 'Gajanand Gold Cotton Seed Cake',
       description: 'Premium quality cotton seed cake with 28-30% protein content for maximum milk yield in dairy cattle.',
-      image: '/lovable-uploads/cebabb95-3562-40a4-a4c3-c55a85187f63.png',
+      image: '/lovable-uploads/gajanandGold.png',
       price: 'Best Price Available',
       features: ['28-30% Protein Content', 'Increases Milk Yield by 25%', 'FSSAI Certified', 'High Digestibility', 'Natural Processing'],
       benefits: ['Enhanced Milk Production', 'Better Fat Content', 'Improved Cattle Health', 'Cost Effective'],
@@ -32,42 +32,42 @@ const Products = () => {
       category: 'Premium Grade',
       rating: 4.9
     },
-    {
-      name: 'Durga Brand Cotton Seed Cake',
-      description: 'Mechanically extracted cotton seed cake perfect for commercial dairy farms and large-scale operations.',
-      image: '/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.jpg',
-      price: 'Wholesale Rates',
-      features: ['24-26% Protein Content', 'High Digestibility', 'Bulk Supply Available', 'Consistent Quality', 'Commercial Grade'],
-      benefits: ['Cost Effective Solution', 'Reliable Supply', 'Proven Results', 'Better Reproduction'],
-      specifications: {
-        protein: '24-26%',
-        fat: '6-8%',
-        fiber: '20-24%',
-        moisture: '9-11%'
-      },
-      category: 'Commercial Grade',
-      rating: 4.8
-    },
-    {
-      name: 'Kisan Gold Cotton Seed Cake',
-      description: '100% organic cotton seed cake from pesticide-free cotton cultivation using traditional methods.',
-      image: '/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png',
-      price: 'Premium Rates',
-      features: ['100% Organic Certified', 'Chemical Free', 'Pesticide Free', 'Traditional Processing', 'Pure Quality'],
-      benefits: ['Safe for Animals', 'Natural Growth', 'Pure Milk Production', 'Environment Friendly'],
-      specifications: {
-        protein: '26-28%',
-        fat: '5-6%',
-        fiber: '19-23%',
-        moisture: '8-9%'
-      },
-      category: 'Organic Grade',
-      rating: 4.7
-    },
+    // {
+    //   name: 'Durga Brand Cotton Seed Cake',
+    //   description: 'Mechanically extracted cotton seed cake perfect for commercial dairy farms and large-scale operations.',
+    //   image: '/lovable-uploads/57319956-8fac-4bd4-b90c-1f26ddd3e5f9.jpg',
+    //   price: 'Wholesale Rates',
+    //   features: ['24-26% Protein Content', 'High Digestibility', 'Bulk Supply Available', 'Consistent Quality', 'Commercial Grade'],
+    //   benefits: ['Cost Effective Solution', 'Reliable Supply', 'Proven Results', 'Better Reproduction'],
+    //   specifications: {
+    //     protein: '24-26%',
+    //     fat: '6-8%',
+    //     fiber: '20-24%',
+    //     moisture: '9-11%'
+    //   },
+    //   category: 'Commercial Grade',
+    //   rating: 4.8
+    // },
+    // {
+    //   name: 'Kisan Gold Cotton Seed Cake',
+    //   description: '100% organic cotton seed cake from pesticide-free cotton cultivation using traditional methods.',
+    //   image: '/lovable-uploads/ab1f78de-2f19-4b3a-940b-ef7e0bb86bea.png',
+    //   price: 'Premium Rates',
+    //   features: ['100% Organic Certified', 'Chemical Free', 'Pesticide Free', 'Traditional Processing', 'Pure Quality'],
+    //   benefits: ['Safe for Animals', 'Natural Growth', 'Pure Milk Production', 'Environment Friendly'],
+    //   specifications: {
+    //     protein: '26-28%',
+    //     fat: '5-6%',
+    //     fiber: '19-23%',
+    //     moisture: '8-9%'
+    //   },
+    //   category: 'Organic Grade',
+    //   rating: 4.7
+    // },
     {
       name: 'Yashoda Brand Cotton Seed Cake',
       description: 'Convenient pellet form for easy feeding and storage, reducing wastage and ensuring uniform nutrition.',
-      image: '/lovable-uploads/1d0cfaae-58fc-4cb1-b8ce-544667a95a3d.png',
+      image: '/lovable-uploads/yashoda.png',
       price: 'Standard Rates',
       features: ['Pellet Form', 'Easy Handling', 'Less Wastage', 'Better Storage', 'Uniform Mixing'],
       benefits: ['Convenient Use', 'Longer Shelf Life', 'Better Palatability', 'Easy Transportation'],
@@ -92,7 +92,7 @@ const Products = () => {
   return (
     <>
       <SEO 
-        title="Premium Cotton Seed Cake Products - Increase Milk Production by 30% | Gajanand Oil Industry"
+        title="Premium Cotton Seed Cake Products - Increase Milk Production by 30% | Gajanand Oil Industries"
         description="Explore our premium cotton seed cake products: gajanand Gold, Durga Brand, Kisan Gold, and Yashoda Brand. ISO certified, FSSAI approved. 28-30% protein content for maximum milk yield."
         keywords="cotton seed cake products, gajanand gold cotton seed cake, durga brand cattle feed, kisan gold organic feed, premium cattle feed, dairy cow nutrition, milk production feed"
         canonicalUrl="https://gajanandoilindustry.com/products"
@@ -130,7 +130,7 @@ const Products = () => {
           </p>
         </motion.div>
 
-        {/* Quality Features */}
+        {/* Quality Features
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -147,7 +147,7 @@ const Products = () => {
               <p className="text-xs sm:text-sm text-slate-600">{feature.description}</p>
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* Products Grid */}
         <motion.div 
@@ -253,44 +253,7 @@ const Products = () => {
         </motion.div>
 
         {/* Why Choose Our Products */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="bg-white rounded-2xl shadow-lg p-8 border border-slate-100 mb-16"
-        >
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Why Choose Our Cotton Seed Cake?</h2>
-            <p className="text-lg text-slate-600">
-              Proven results that make a real difference to your dairy farm's productivity
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-emerald-600" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">25-30% Milk Increase</h3>
-              <p className="text-slate-600">Scientifically proven to increase milk production within 30 days</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Quality Assured</h3>
-              <p className="text-slate-600">ISO certified and FSSAI approved for guaranteed quality</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Leaf className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">100% Natural</h3>
-              <p className="text-slate-600">No harmful chemicals or artificial additives used</p>
-            </div>
-          </div>
-        </motion.div>
+
 
         {/* CTA Section */}
      
